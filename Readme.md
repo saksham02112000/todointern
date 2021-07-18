@@ -3,10 +3,9 @@
 ``` 
 git clone https://github.com/saksham02112000/todointern.git 
 ```
-# Go to API folder and Initialise npm using command :
+# Go to API folder :
 ``` 
 cd todointern/api
-npm init
 ```
 # Install required dependencies:
 ``` 

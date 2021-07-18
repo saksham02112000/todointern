@@ -1,5 +1,7 @@
 import { createAsyncThunk, createSlice } from '@reduxjs/toolkit';
 
+
+// load the todo from server
 export const getTodosAsync = createAsyncThunk(
     'todos/getTodosAsync',
     async () => {
@@ -11,6 +13,8 @@ export const getTodosAsync = createAsyncThunk(
     }
 );
 
+
+// adding the new todo and sending it to server
 export const addTodoAsync = createAsyncThunk(
     'todos/addTodoAsync',
     async (payload) => {
@@ -28,6 +32,9 @@ export const addTodoAsync = createAsyncThunk(
         }
     }
 );
+
+
+// server call to delete a todo
 export const deleteTodoAsync = createAsyncThunk(
     'todos/deleteTodoAsync',
     async (payload) => {
